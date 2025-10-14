@@ -71,8 +71,8 @@ def ejecutar_app():
 
                 if gestor.marcar_completada(tarea_id):
                     # Mensaje
-                    print(
-                        f'⭐ ¡Excelente trabajo! Tarea {tarea_id} marcada como HECHA.')
+                    input(
+                        f'\n⭐ ¡Excelente trabajo! Tarea {tarea_id} marcada como HECHA.\n\nPresione ENTER para continuar ')
                 else:
                     print(
                         f'❌ Error: El ID {tarea_id} no existe o ya está completado')
@@ -85,10 +85,13 @@ def ejecutar_app():
 
             # MOSTRAR TAREAS (CARDINALIDAD Y SUBCONJUNTOS)
 
+            clear_console()
+
             pendientes, completadas, cardinalidad_u = gestor.obtener_subconjuntos()
 
             if not gestor.tareas:
-                print('La lista está vacía. ¡Añade algunas tareas!')
+                input(
+                    '\nLa lista está vacía. ¡Añade algunas tareas!\n\nPresione ENTER para continuar ')
                 continue
 
             print(f'TAREAS PENDIENTES {len(pendientes)}:')
@@ -100,13 +103,14 @@ def ejecutar_app():
                 print(t)
 
             # Mensaje con el dato de cardinalidad, pero de forma casual
-
-            print(
-                f'\nTotal de tareas en tu lista (Cardinalidad): {cardinalidad_u}')
+            input(
+                f'\nTotal de tareas en tu lista (Cardinalidad): {cardinalidad_u}\n\nPresione ENTER para continuar ')
 
         elif eleccion == '4':
 
             # FILTRO LÓGICO (URGENTE Y PENDIENTE)
+
+            clear_console()
 
             filtro = gestor.filtrar_tareas_logicas()
             print(
@@ -115,9 +119,10 @@ def ejecutar_app():
             if filtro:
                 for t in filtro:
                     print(t)
+                input('\n\nPresione ENTER para continuar ')
 
             else:
-                print('Sin tareas urgentes pendientes.')
+                input('Sin tareas urgentes pendientes.')
 
         elif eleccion == '5':
 
