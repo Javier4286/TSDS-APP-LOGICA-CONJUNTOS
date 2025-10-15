@@ -2,7 +2,7 @@ import sys
 from clear_console import clear_console
 from gestion_tareas import GestorTareas
 
-input('\nEsta aplicación modela la organización de tareas bajo la óptica de la Matemática Discreta,\naplicando conceptos de Teoría de Conjuntos y Lógica Proposicional.\n\nEl sistema gestiona el Conjunto Universal (U),\nparticionado en subconjuntos disjuntos (P y C) con Cardinalidad |U| = |P| + |C|.\n\nLa adición de tareas es una operación de Unión, y cada tarea se identifica por una Función Inyectiva (ID). \n\nAdemás, el filtro de prioridad implementa una expresión lógica compuesta\n(la Conjunción Q ^ ¬P donde Q = "urgente" y P = "completada") para la selección precisa de subconjuntos,\nutilizando los conectivos lógicos para definir los criterios de búsqueda.\n\nPresione ENTER para continuar ')
+input('\nEsta aplicación modela la organización de tareas bajo la óptica de la Matemática Discreta,\naplicando conceptos de Teoría de Conjuntos y Lógica Proposicional.\n\nEl sistema gestiona el Conjunto Universal (U),\nparticionado en subconjuntos disjuntos (P y C) con Cardinalidad |U| = |P| + |C|.\n\nLa adición de tareas es una operación de Unión, y cada tarea se identifica por una Función Inyectiva (ID). \n\nAdemás, el filtro de prioridad implementa una expresión lógica compuesta\n(la Conjunción Q ^ ¬P donde Q = "urgente" y P = "completada") para la selección precisa de subconjuntos,\nutilizando los conectivos lógicos para definir los criterios de búsqueda.\n\nIntegrantes:\nGonzález Javier Alexis\nJiménez Mariel Emilse\nLazarte Mansicidor Alexis Saúl\n\nPresione ENTER para continuar ')
 
 clear_console()
 
