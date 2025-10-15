@@ -1,0 +1,11 @@
+Paso a paso para instalar Python en su sistema:
+
+1) - Ejecute el archivo 'python-3.13.9-amd64' en la raíz del proyecto 'TSDS-APP-LOGICA-CONJUNTOS'.
+
+2) - Marque las casillas 'Use admin privileges when installing py.exe' y 'Add python.exe to PATH'.
+
+3) - Elija la opción 'Install Now'.
+
+4) - Luego de finalizar la instalación, elija la opción 'Close'.
+
+5) - Finalmente, haga clic derecho en el archivo 'main.py' en la raíz del proyecto 'TSDS-APP-LOGICA-CONJUNTOS', luego diríjase al sector 'Abrir con' y seleccione 'Python'.
