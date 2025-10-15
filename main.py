@@ -90,7 +90,7 @@ def ejecutar_app():
 
             clear_console()
             input(
-                f'\nConceptos: Conjuntos, Subconjuntos, Partición y Cardinalidad.\n\nEstamos trabajando con una **partición** del conjunto universal de tareas U:\n\n1. Conjunto de Tareas Pendientes (P)\n\n2. Conjunto de Tareas Completadas (C)\n\nEstas cumplen con:\n\n- **Unión**: P UNION C = U (Cubre todas las tareas)\n\n- **Intersección**: P ∩ C = 0 (Son **disjuntos**, la intersección es el **conjunto vacío**)\n\n- **Cardinalidad**: El total de tareas es la suma: |U| = |P| + |C|.\n\nPresione ENTER para continuar ')
+                f'\nConceptos: Conjuntos, Subconjuntos, Partición y Cardinalidad.\n\nEstamos trabajando con una **partición** del conjunto universal de tareas U:\n\n1. Conjunto de Tareas Pendientes (P)\n\n2. Conjunto de Tareas Completadas (C)\n\nEstas cumplen con:\n\n- **Unión**: P UNION C = U (Cubre todas las tareas)\n\n- **Intersección**: P ∩ C = 0 (Son **disyuntos**, la intersección es el **conjunto vacío**)\n\n- **Cardinalidad**: El total de tareas es la suma: |U| = |P| + |C|.\n\nPresione ENTER para continuar ')
 
             pendientes, completadas, cardinalidad_u = gestor.obtener_subconjuntos()
 
